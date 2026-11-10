@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ColorSensorIRRatioFactor>
+    <version>0.1</version>
+    <Factor>
+        1.0, 0.0, 0.0, 0.0, 0.0,
+        0.0, 1.0, 0.0, 0.0, 0.0,
+        0.0, 0.0, 1.0, 0.0, 0.0,
+        0.0, 0.0, 0.0, 1.0, 0.0,
+        0.0, 0.0, 0.0, 0.0, 1.0
+    </Factor>
+    <Channels>5</Channels>
+    <Numbers>5</Numbers>
+    <IRComponentCoefficient>2.73</IRComponentCoefficient>
+    <GainCoefficient>3.8</GainCoefficient>
+</ColorSensorIRRatioFactor>

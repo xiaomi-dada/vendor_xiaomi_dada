@@ -1,0 +1,295 @@
+[
+    {
+        "PhgType": 0,
+        "PhgName": "Phg_SIMPLE",
+        "threshold": -1
+    },
+    {
+        "PhgType": 1,
+        "PhgName": "Phg_HDR",
+        "threshold": -1
+    },
+    {
+        "PhgType": 2,
+        "PhgName": "Phg_SR",
+        "threshold": -1
+    },
+    {
+        "PhgType": 3,
+        "PhgName": "Phg_SN",
+        "threshold": -1
+    },
+    {
+        "PhgType": 4,
+        "PhgName": "Phg_BURST",
+        "threshold": -1
+    },
+    {
+        "PhgType": 5,
+        "PhgName": "Phg_HDRSR",
+        "threshold": -1
+    },
+    {
+        "PhgType": 6,
+        "PhgName": "Phg_FUSION",
+        "threshold": -1
+    },
+    {
+        "PhgType": 7,
+        "PhgName": "Phg_SR_FUSION",
+        "threshold": -1
+    },
+    {
+        "PhgType": 8,
+        "PhgName": "Phg_VENDOR_MFNR",
+        "threshold": -1
+    },
+    {
+        "PhgType": 9,
+        "PhgName": "Phg_MIHAL_MFNR",
+        "threshold": -1
+    },
+    {
+        "PhgType": 10,
+        "PhgName": "Phg_BOKEH",
+        "threshold": -1
+    },
+    {
+        "PhgType": 11,
+        "PhgName": "Phg_BOKEH_MD",
+        "threshold": -1
+    },
+    {
+        "PhgType": 12,
+        "PhgName": "Phg_BOKEH_HDR",
+        "threshold": -1
+    },
+    {
+        "PhgType": 13,
+        "PhgName": "Phg_BOKEH_SE",
+        "threshold": -1
+    },
+    {
+        "PhgType": 14,
+        "PhgName": "Phg_BOKEH_MD_SN",
+        "threshold": -1
+    },
+    {
+        "PhgType": 15,
+        "PhgName": "Phg_BOKEH_MD_HDR",
+        "threshold": -1
+    },
+    {
+        "PhgType": 16,
+        "PhgName": "Phg_BOKEH_MIHAL_MFNR",
+        "threshold": -1
+    },
+    {
+        "PhgType": 17,
+        "PhgName": "Phg_BOKEH_VENDOR_MFNR",
+        "threshold": -1
+    },
+    {
+        "PhgType": 18,
+        "PhgName": "Phg_SINGLE_BOKEH_MIHAL_MFNR",
+        "threshold": -1
+    },
+    {
+        "PhgType": 19,
+        "PhgName": "Phg_SINGLE_BOKEH_VENDOR_MFNR",
+        "threshold": -1
+    },
+    {
+        "PhgType": 20,
+        "PhgName": "Phg_SINGLE_BOKEH",
+        "threshold": -1
+    },
+    {
+        "PhgType": 21,
+        "PhgName": "Phg_MANUAL",
+        "threshold": -1
+    },
+    {
+        "PhgType": 22,
+        "PhgName": "Phg_AINR",
+        "threshold": -1
+    },
+    {
+        "PhgType": 23,
+        "PhgName": "Phg_HD_AINR",
+        "threshold": -1
+    },
+    {
+        "PhgType": 24,
+        "PhgName": "Phg_HD_UPSCALE",
+        "threshold": -1
+    },
+    {
+        "PhgType": 25,
+        "PhgName": "Phg_HD_MFNR",
+        "threshold": -1
+    },
+    {
+        "PhgType": 26,
+        "PhgName": "Phg_HD_REMOSAIC_MFNR",
+        "threshold": -1
+    },
+    {
+        "PhgType": 27,
+        "PhgName": "Phg_HD_REMOSAIC_MFNR_HDR",
+        "threshold": -1
+    },
+    {
+        "PhgType": 28,
+        "PhgName": "Phg_DEPTH_EXTEND",
+        "threshold": -1
+    },
+    {
+        "PhgType": 29,
+        "PhgName": "Phg_MANUALRAW",
+        "threshold": -1
+    },
+    {
+        "PhgType": 30,
+        "PhgName": "Phg_HD_MANUALRAW",
+        "threshold": -1
+    },
+    {
+        "PhgType": 31,
+        "PhgName": "Phg_HDR_RAW",
+        "threshold": -1
+    },
+    {
+        "PhgType": 32,
+        "PhgName": "Phg_HDR_STAGGER_RAW",
+        "threshold": -1
+    },
+    {
+        "PhgType": 33,
+        "PhgName": "Phg_HD_REMOSAIC_HDR",
+        "threshold": -1
+    },
+    {
+        "PhgType": 34,
+        "PhgName": "Phg_SINGLE_BOKEH_HDR",
+        "threshold": -1
+    },
+    {
+        "PhgType": 35,
+        "PhgName": "Phg_DSAC_BOKEH",
+        "threshold": -1
+    },
+    {
+        "PhgType": 36,
+        "PhgName": "Phg_AINR_FLASH",
+        "threshold": -1
+    },
+    {
+        "PhgType": 37,
+        "PhgName": "Phg_QUAD_RAW_SR",
+        "threshold": -1
+    },
+    {
+        "PhgType": 38,
+        "PhgName": "Phg_HD_HDR_RAW",
+        "threshold": -1
+    },
+    {
+        "PhgType": 39,
+        "PhgName": "Phg_HD_REMOSAIC_SINGLE",
+        "threshold": -1
+    },
+    {
+        "PhgType": 40,
+        "PhgName": "Phg_SmartAE_AllInOne",
+        "threshold": -1
+    },
+    {
+        "PhgType": 41,
+        "PhgName": "Phg_SmartAE_AllInOne_Bokeh",
+        "threshold": -1
+    },
+    {
+        "PhgType": 42,
+        "PhgName": "Phg_DOL2",
+        "threshold": -1
+    },
+    {
+        "PhgType": 43,
+        "PhgName": "Phg_BOKEH_AINR",
+        "threshold": -1
+    },
+    {
+        "PhgType": 44,
+        "PhgName": "Phg_BOKEH_SR",
+        "threshold": -1
+    },
+    {
+        "PhgType": 45,
+        "PhgName": "Phg_BOKEH_SNSC",
+        "threshold": -1
+    },
+    {
+        "PhgType": 46,
+        "PhgName": "Phg_BOKEH_HDSR",
+        "threshold": -1
+    },
+    {
+        "PhgType": 47,
+        "PhgName": "Phg_ASTRAL",
+        "threshold": -1
+    },
+    {
+        "PhgType": 48,
+        "PhgName": "Phg_HD_SUPER_UPSCALE",
+        "threshold": -1
+    },
+    {
+        "PhgType": 49,
+        "PhgName": "Phg_HD_SUPER_REMOSAIC",
+        "threshold": -1
+    },
+    {
+        "PhgType": 50,
+        "PhgName": "Phg_SR_MFNR_FUSION",
+        "threshold": -1
+    },
+    {
+        "PhgType": 51,
+        "PhgName": "Phg_DUAL_SENSOR_CAL",
+        "threshold": -1
+    },
+    {
+        "PhgType": 52,
+        "PhgName": "Phg_HD_SUPER_SmartAE_AllInOne",
+        "threshold": -1
+    },
+    {
+        "PhgType": 53,
+        "PhgName": "Phg_HD_SUPER_AINR",
+        "threshold": -1
+    },
+    {
+        "PhgType": 54,
+        "PhgName": "Phg_HD_SUPER_SR",
+        "threshold": -1
+    },
+    {
+        "PhgType": 55,
+        "PhgName": "Phg_HD_SUPER_HDR",
+        "threshold": -1
+    },
+    {
+        "PhgType": 56,
+        "PhgName": "Phg_HD_SUPER_SE",
+        "threshold": -1
+    },
+    {
+        "PhgType": 57,
+        "PhgName": "Phg_HD_SUPER_HDSR",
+        "threshold": -1
+    },
+    {
+        "common": -1
+    }
+]

@@ -1,0 +1,105 @@
+{
+    "SENSORNAME_ROLEID_MAP":[
+        {
+            "sensorName": "dada_ofilm_ovx9100_wide_i",
+            "roleID": 0
+        },
+        {
+            "sensorName": "dada_ofilm_ovx9100_p24u128b_wide_i_eeprom",
+            "roleID": 0
+        },
+        {
+            "sensorName": "dada_ofilm_ovx9100_ak7316_wide_i_actuator",
+            "roleID": 0
+        },
+        {
+            "sensorName": "dada_wide_ak7323_ois_i",
+            "roleID": 0
+        },
+        {
+            "sensorName": "dada_sunny_ovx9100_wide_ii",
+            "roleID": 0
+        },
+        {
+            "sensorName": "dada_sunny_ovx9100_p24u128b_wide_ii_eeprom",
+            "roleID": 0
+        },
+        {
+            "sensorName": "dada_sunny_ovx9100_ak7316_wide_ii_actuator",
+            "roleID": 0
+        },
+        {
+            "sensorName": "dada_wide_ak7323_ois_ii",
+            "roleID": 0
+        },
+        {
+            "sensorName": "dada_sunny_ov32b40_front_i",
+            "roleID":1
+        },
+        {
+            "sensorName": "dada_sunny_ov32b40_gt24p64e_front_i_eeprom",
+            "roleID":1
+        },
+        {
+            "sensorName": "dada_ofilm_ov32b40_front_ii",
+            "roleID":1
+        },
+        {
+            "sensorName": "dada_ofilm_ov32b40_fm24ln64i3_front_ii_eeprom",
+            "roleID":1
+        },
+        {
+            "sensorName": "dada_sunny_s5kjn5_tele3x_i",
+            "roleID": 20
+        },
+        {
+            "sensorName": "dada_sunny_s5kjn5_p24c128f_tele3x_i_eeprom",
+            "roleID": 20
+        },
+        {
+            "sensorName": "dada_sunny_s5kjn5_gt9764v_tele3x_i_actuator",
+            "roleID": 20
+        },
+        {
+            "sensorName": "dada_sunny_s5kjn5_bu24619_tele3x_i_ois",
+            "roleID": 20
+        },
+        {
+            "sensorName": "dada_ofilm_s5kjn5_tele3x_ii",
+            "roleID": 20
+        },
+        {
+            "sensorName": "dada_oflim_s5kjn5_gt24p128f_tele3x_ii_eeprom",
+            "roleID": 20
+        },
+        {
+            "sensorName": "dada_ofilm_s5kjn5_gt9764v_tele3x_ii_actuator",
+            "roleID": 20
+        },
+        {
+            "sensorName": "dada_ofilm_s5kjn5_bu24619_tele3x_ii_ois",
+            "roleID": 20
+        },
+        {
+            "sensorName": "dada_sunny_s5kjn1_ultra_i",
+            "roleID": 21
+        },
+        {
+            "sensorName": "dada_sunny_s5kjn1_gt24p128f_ultra_i_eeprom",
+            "roleID": 21
+        },
+        {
+            "sensorName": "dada_ofilm_s5kjn1_ultra_ii",
+            "roleID": 21
+        },
+        {
+            "sensorName": "dada_ofilm_s5kjn1_gt24p128f_ultra_ii_eeprom",
+            "roleID": 21
+        }
+    ],
+
+    "TOMBSTONE_FUNCTION":{
+        "isEnable": false,
+        "fileNumber": 20
+    }
+}

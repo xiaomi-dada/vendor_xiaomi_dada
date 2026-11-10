@@ -1,0 +1,3 @@
+##Get GPU Version command:adb shell dumpsys SurfaceFlinger | grep -iEa opengl
+Current GPU Version: GLES: Qualcomm, Adreno (TM) 830, OpenGL ES 3.2 V@0800.71 (GIT@208ca19915, Iab05a79315, 1770369230) (Date:02\/06\/26)
+Current Resource Version: 2025-02-21T16:42:57.000+08:00

@@ -1,0 +1,271 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "QRD", "Dragon", "Surf", "HDK", "RCM"],
+    "soc_id": ["519", "557", "536", "577", "482", "618"]
+  },
+  "vi5300_0":{
+    "owner": "vi5300",
+    ".tof":{
+      "owner": "vi5300",
+      ".config":{
+        "owner": "vi5300",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      },
+      ".customer":{
+        "owner": "vi5300",
+        "data0":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data1":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data2":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data3":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data4":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data5":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data6":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data7":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data8":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data9":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data10":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data11":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data12":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data13":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data14":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data15":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data16":{ "type": "int", "ver": "0",
+            "data": "0"
+        }
+      },
+      ".customer_original":{
+        "owner": "vi5300",
+        "data0":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data1":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data2":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data3":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data4":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data5":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data6":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data7":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data8":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data9":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data10":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data11":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data12":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data13":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data14":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data15":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "data16":{ "type": "int", "ver": "0",
+            "data": "0"
+        }
+      }
+    }
+  },
+  "vi5300_0_platform":{
+    "owner": "vi5300",
+    ".config":{
+      "owner": "vi5300",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "13"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "108"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "54"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "1",
+        "data": "2"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vdd_rail":{ "type": "str", "ver": "1",
+        "data": "/pmic/client/sensor_vdd_4"
+      },
+      "vddio_rail":{ "type": "str", "ver": "1",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+    ".calibration":{
+      "owner": "vi5300",
+      ".fac_cal":{
+        "owner": "vi5300",
+        "xtalk":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "maxratio":{ "type": "int", "ver": "0",
+            "data": "10"
+        },
+        "offset":{ "type": "int", "ver": "0",
+            "data": "0"
+        },
+        "xtalk_peak":{ "type": "int", "ver": "0",
+            "data": "600"
+        },
+        "xtalk_cal_upper":{ "type": "int", "ver": "0",
+            "data": "4"
+        },
+        "xtalk_cal_lower":{ "type": "int", "ver": "0",
+            "data": "-6"
+        },
+        "offset_upper":{ "type": "int", "ver": "0",
+            "data": "40"
+        },
+        "offset_lower":{ "type": "int", "ver": "0",
+            "data": "-40"
+        },
+        "near_upper":{ "type": "int", "ver": "0",
+            "data": "210"
+        },
+        "near_lower":{ "type": "int", "ver": "0",
+            "data": "190"
+        },
+        "far_upper":{ "type": "int", "ver": "0",
+            "data": "1100"
+        },
+        "far_lower":{ "type": "int", "ver": "0",
+            "data": "900"
+        }
+      }
+
+    },
+    ".placement":{
+      "owner": "vi5300",
+      "0":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "1":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "2":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "3":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "4":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "5":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "6":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "7":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "8":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "9":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "10":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "11":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      }
+    }
+  }
+}
