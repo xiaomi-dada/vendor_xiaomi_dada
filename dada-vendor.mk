@@ -8,6 +8,7 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/dada/proprietary/odm/etc/acdbdata/Fluence/Fluence_acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Fluence/Fluence_acdb_cal.acdb \
     vendor/xiaomi/dada/proprietary/odm/etc/acdbdata/Fluence/Fluence_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Fluence/Fluence_workspaceFileXml.qwsp \
+    vendor/xiaomi/dada/proprietary/odm/etc/audio/audio_module_config_primary.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/audio_module_config_primary.xml \
     vendor/xiaomi/dada/proprietary/odm/etc/audio/sku_sun/adsp_sleep_monitor.conf:$(TARGET_COPY_OUT_ODM)/etc/audio/sku_sun/adsp_sleep_monitor.conf \
     vendor/xiaomi/dada/proprietary/odm/etc/audio/sku_sun/mixer_paths_overlay_dynamic.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/sku_sun/mixer_paths_overlay_dynamic.xml \
     vendor/xiaomi/dada/proprietary/odm/etc/audio/sku_sun/mixer_paths_overlay_static.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/sku_sun/mixer_paths_overlay_static.xml \
@@ -2254,3 +2255,23 @@ PRODUCT_PACKAGES += \
     mfp-daemon \
     vendor.qti.camera.provider-service_64 \
     vendor.xiaomi.hw.touchfeature-service
+
+PRODUCT_PACKAGES += \
+    vendor_lib_rfsa_adsp_libSnpeHtpV79Skel_so \
+    vendor_lib64_camera_aon_front_i_1_pb \
+    vendor_lib64_camera_aon_front_ii_1_pb \
+    vendor_lib64_camera_aon_rear_i_2_pb \
+    vendor_lib64_camera_aon_rear_ii_2_pb \
+    vendor_lib64_camera_bitmlconfig_bin \
+    vendor_lib64_camera_com_qti_ofe_profiledb_default_bin \
+    vendor_lib64_hw_camera_qcom_so \
+    vendor_lib64_hw_com_qti_chi_override_so \
+    vendor_lib64_libSNPE_so \
+    vendor_lib64_libcamxexternalformatutils_so \
+    vendor_lib64_qsn1nrt430_bin \
+    vendor_lib64_qsn1nrt43270_bin \
+    vendor_lib64_qsn2all_bin \
+    vendor_lib64_qsn3all_bin \
+    vendor_lib64_rfs_dsp_libbitml_nsp_73na_skel_so \
+    vendor_lib64_rfs_dsp_libbitml_nsp_79na_skel_so \
+    vendor_lib64_rfs_dsp_libqsegnetengine_dsp_skel_so

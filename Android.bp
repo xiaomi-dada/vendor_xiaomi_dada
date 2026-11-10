@@ -15790,3 +15790,129 @@ cc_prebuilt_binary {
     relative_install_path: "hw",
     device_specific: true,
 }
+
+install_symlink {
+    name: "vendor_lib_rfsa_adsp_libSnpeHtpV79Skel_so",
+    soc_specific: true,
+    installed_location: "lib/rfsa/adsp/libSnpeHtpV79Skel.so",
+    symlink_target: "/odm/lib/rfsa/adsp/libSnpeHtpV79Skel.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_camera_aon_front_i_1_pb",
+    soc_specific: true,
+    installed_location: "lib64/camera/aon_front_i_1.pb",
+    symlink_target: "/odm/lib64/camera/aon_front_i_1.pb",
+}
+
+install_symlink {
+    name: "vendor_lib64_camera_aon_front_ii_1_pb",
+    soc_specific: true,
+    installed_location: "lib64/camera/aon_front_ii_1.pb",
+    symlink_target: "/odm/lib64/camera/aon_front_ii_1.pb",
+}
+
+install_symlink {
+    name: "vendor_lib64_camera_aon_rear_i_2_pb",
+    soc_specific: true,
+    installed_location: "lib64/camera/aon_rear_i_2.pb",
+    symlink_target: "/odm/lib64/camera/aon_rear_i_2.pb",
+}
+
+install_symlink {
+    name: "vendor_lib64_camera_aon_rear_ii_2_pb",
+    soc_specific: true,
+    installed_location: "lib64/camera/aon_rear_ii_2.pb",
+    symlink_target: "/odm/lib64/camera/aon_rear_ii_2.pb",
+}
+
+install_symlink {
+    name: "vendor_lib64_camera_bitmlconfig_bin",
+    soc_specific: true,
+    installed_location: "lib64/camera/bitmlconfig.bin",
+    symlink_target: "/odm/lib64/camera/bitmlconfig.bin",
+}
+
+install_symlink {
+    name: "vendor_lib64_camera_com_qti_ofe_profiledb_default_bin",
+    soc_specific: true,
+    installed_location: "lib64/camera/com.qti.ofe.profiledb.default.bin",
+    symlink_target: "/odm/lib64/camera/com.qti.ofe.profiledb.default.bin",
+}
+
+install_symlink {
+    name: "vendor_lib64_hw_camera_qcom_so",
+    soc_specific: true,
+    installed_location: "lib64/hw/camera.qcom.so",
+    symlink_target: "/odm/lib64/hw/camera.qcom.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_hw_com_qti_chi_override_so",
+    soc_specific: true,
+    installed_location: "lib64/hw/com.qti.chi.override.so",
+    symlink_target: "/odm/lib64/hw/com.qti.chi.override.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_libSNPE_so",
+    soc_specific: true,
+    installed_location: "lib64/libSNPE.so",
+    symlink_target: "/odm/lib64/libSNPE.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_libcamxexternalformatutils_so",
+    soc_specific: true,
+    installed_location: "lib64/libcamxexternalformatutils.so",
+    symlink_target: "/odm/lib64/libcamxexternalformatutils.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_qsn1nrt430_bin",
+    soc_specific: true,
+    installed_location: "lib64/qsn1nrt430.bin",
+    symlink_target: "/odm/lib64/qsn1nrt430.bin",
+}
+
+install_symlink {
+    name: "vendor_lib64_qsn1nrt43270_bin",
+    soc_specific: true,
+    installed_location: "lib64/qsn1nrt43270.bin",
+    symlink_target: "/odm/lib64/qsn1nrt43270.bin",
+}
+
+install_symlink {
+    name: "vendor_lib64_qsn2all_bin",
+    soc_specific: true,
+    installed_location: "lib64/qsn2all.bin",
+    symlink_target: "/odm/lib64/qsn2all.bin",
+}
+
+install_symlink {
+    name: "vendor_lib64_qsn3all_bin",
+    soc_specific: true,
+    installed_location: "lib64/qsn3all.bin",
+    symlink_target: "/odm/lib64/qsn3all.bin",
+}
+
+install_symlink {
+    name: "vendor_lib64_rfs_dsp_libbitml_nsp_73na_skel_so",
+    soc_specific: true,
+    installed_location: "lib64/rfs/dsp/libbitml_nsp_73na_skel.so",
+    symlink_target: "/odm/lib64/rfs/dsp/libbitml_nsp_73na_skel.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_rfs_dsp_libbitml_nsp_79na_skel_so",
+    soc_specific: true,
+    installed_location: "lib64/rfs/dsp/libbitml_nsp_79na_skel.so",
+    symlink_target: "/odm/lib64/rfs/dsp/libbitml_nsp_79na_skel.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_rfs_dsp_libqsegnetengine_dsp_skel_so",
+    soc_specific: true,
+    installed_location: "lib64/rfs/dsp/libqsegnetengine_dsp_skel.so",
+    symlink_target: "/odm/lib64/rfs/dsp/libqsegnetengine_dsp_skel.so",
+}
