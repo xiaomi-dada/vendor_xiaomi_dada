@@ -2094,6 +2094,7 @@ PRODUCT_PACKAGES += \
     com.qti.chi.offline \
     com.qti.chi.override \
     consumerir.qcom \
+    fingerprint.goodix_us.default \
     fingerprint.qcom_us.default \
     immunesystem.db.sqlite3 \
     libAF \
@@ -2192,6 +2193,7 @@ PRODUCT_PACKAGES += \
     libellv \
     libfastmessage \
     libfuai_camera_alg \
+    libgf_hal \
     libhandgesture.arcsoft \
     libharbo \
     libhdr10plus \
