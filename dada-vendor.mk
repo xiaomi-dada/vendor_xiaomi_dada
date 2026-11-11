@@ -1298,6 +1298,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dada/proprietary/odm/etc/init/init.mfp-daemon.aidl.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.mfp-daemon.aidl.rc \
     vendor/xiaomi/dada/proprietary/odm/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.camera.provider-service_64.rc \
     vendor/xiaomi/dada/proprietary/odm/etc/init/vendor.xiaomi.hw.touchfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hw.touchfeature-service.rc \
+    vendor/xiaomi/dada/proprietary/odm/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc \
     vendor/xiaomi/dada/proprietary/odm/etc/izat_device.conf:$(TARGET_COPY_OUT_ODM)/etc/izat_device.conf \
     vendor/xiaomi/dada/proprietary/odm/etc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-hal-st.conf \
     vendor/xiaomi/dada/proprietary/odm/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nci.conf \
@@ -1780,7 +1781,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dada/proprietary/odm/lib64/qsn3all.bin:$(TARGET_COPY_OUT_ODM)/lib64/qsn3all.bin \
     vendor/xiaomi/dada/proprietary/product/etc/displayconfig/display_id_4630946682710401939.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/displayconfig/display_id_4630946682710401939.xml \
     vendor/xiaomi/dada/proprietary/product/etc/displayconfig/display_id_4630947212918452371.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/displayconfig/display_id_4630947212918452371.xml \
-    vendor/xiaomi/dada/proprietary/vendor/etc/bpf/cameraBpfGpl.o:$(TARGET_COPY_OUT_VENDOR)/etc/bpf/cameraBpfGpl.o \
     vendor/xiaomi/dada/proprietary/vendor/etc/camera/cameraopt_perf.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cameraopt_perf.json \
     vendor/xiaomi/dada/proprietary/vendor/etc/camera/cameraopt_vendor.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cameraopt_vendor.json \
     vendor/xiaomi/dada/proprietary/vendor/etc/init/hw/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.batterysecret.rc \
@@ -1807,6 +1807,8 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.fingerprintextension-V1-ndk \
     vendor.xiaomi.hardware.fx.tunnel-V1-ndk \
     vendor.xiaomi.hw.touchfeature-V1-ndk \
+    vendor.xiaomi.sensor.citsensorservice-V1-ndk \
+    xiaomi.system.hypsys.common-V1-ndk \
     com.qti.actuator.dada_ofilm_ovx9100_ak7316_wide_i_actuator \
     com.qti.actuator.dada_ofilm_s5kjn5_gt9764v_tele3x_ii_actuator \
     com.qti.actuator.dada_sunny_ovx9100_ak7316_wide_ii_actuator \
@@ -2191,9 +2193,13 @@ PRODUCT_PACKAGES += \
     libhdr_stub \
     libheichal \
     libhme \
+    libhta_hexagon_runtime_snpe \
     libhwliqinterface2 \
     libhwlispcffdump \
     libiccprofile \
+    libipebpsstriping \
+    libipebpsstriping170 \
+    libipebpsstriping480 \
     libiqdbgmgr \
     libisphwsetting \
     libjpege \
@@ -2252,11 +2258,13 @@ PRODUCT_PACKAGES += \
     libmorpho_Depurple \
     libmpbase \
     libocr_api \
+    libofestriping \
     libofflinedebugdata \
     libois_channel_stub \
     liboischannel \
     libopencv \
     libopencv3a \
+    libopestriping \
     libportrait_repair_qnn \
     libpostprocinfo \
     libproj_qmot_tracker \
@@ -2332,11 +2340,13 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.camera.aon-impl.xml \
     vendor.xiaomi.hardware.aidlbgservice-service.xml \
     vendor.xiaomi.hw.touchfeature-service.xml \
+    vendor.xiaomi.sensor.citsensorservice.aidl.xml \
     batterysecret \
     mi_thermald \
     mfp-daemon \
     vendor.qti.camera.provider-service_64 \
-    vendor.xiaomi.hw.touchfeature-service
+    vendor.xiaomi.hw.touchfeature-service \
+    vendor.xiaomi.sensor.citsensorservice.aidl
 
 PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libSnpeHtpV79Skel_so \
