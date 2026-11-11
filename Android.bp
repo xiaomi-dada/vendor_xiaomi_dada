@@ -147,31 +147,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.fingerprints.extension3-V1-ndk",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/com.fingerprints.extension3-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libcameraobserver",
     owner: "xiaomi",
     strip: {
@@ -642,31 +617,6 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "liblog",
                 "libnativewindow",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.xiaomi.hardware.fingerprintextension-V1-ndk",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.xiaomi.hardware.fingerprintextension-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -11880,7 +11830,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "fingerprint.goodix_us",
+    name: "fingerprint.qcom_us.default",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -11888,38 +11838,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/odm/lib64/hw/fingerprint.goodix_us.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libc++",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libion",
-                "libgf_hal",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "fingerprint.qcom_us",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/hw/fingerprint.qcom_us.so",
+                "proprietary/odm/lib64/hw/fingerprint.qcom_us.default.so",
             ],
             shared_libs: [
                 "libcutils",
@@ -15004,42 +14923,6 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libdl",
                 "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgf_hal",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libgf_hal.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libbase",
-                "libbinder",
-                "libbinder_ndk",
-                "libhidltransport",
-                "libdmabufheap",
-                "libc++",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libion",
-                "libQSEEComAPI",
-                "vendor.xiaomi.hardware.fx.tunnel-V1-ndk",
-                "libc",
-                "libm",
-                "libdl",
             ],
         },
     },
@@ -19099,24 +18982,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "AHBF-V3-service.xml",
-    owner: "xiaomi",
-    src: "proprietary/odm/etc/vintf/manifest/AHBF-V3-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    device_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "fod-aidl.xml",
-    owner: "xiaomi",
-    src: "proprietary/odm/etc/vintf/manifest/fod-aidl.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    device_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "vendor.qti.camera.provider.xml",
     owner: "xiaomi",
     src: "proprietary/odm/etc/vintf/manifest/vendor.qti.camera.provider.xml",
@@ -19219,53 +19084,6 @@ cc_prebuilt_binary {
     },
     prefer: true,
     soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "mfp-daemon",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/bin/hw/mfp-daemon",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libhidlbase",
-                "libhardware",
-                "libutils",
-                "libbase",
-                "libvndksupport",
-                "libbinder",
-                "libbinder_ndk",
-                "android.hardware.biometrics.fingerprint-V4-ndk",
-                "android.hardware.biometrics.common-V4-ndk",
-                "android.hardware.biometrics.common.thread",
-                "android.hardware.biometrics.common.util",
-                "vendor.xiaomi.hardware.fingerprintextension-V1-ndk",
-                "vendor.qti.hardware.fingerprint-V1-ndk",
-                "com.fingerprints.extension3-V1-ndk",
-                "vendor.xiaomi.hardware.fx.tunnel-V1-ndk",
-                "vendor.xiaomi.hw.touchfeature-V1-ndk",
-                "libstagefright_foundation",
-                "android.frameworks.sensorservice-V1-ndk",
-                "android.hardware.sensors-V3-ndk",
-                "libmisight",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    device_specific: true,
 }
 
 cc_prebuilt_binary {

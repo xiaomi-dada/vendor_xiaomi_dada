@@ -1295,7 +1295,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dada/proprietary/odm/etc/display/R_Com_Gary_Gain_mdss_dsi_o3_36_02_0b_dsc_cmd.csv:$(TARGET_COPY_OUT_ODM)/etc/display/R_Com_Gary_Gain_mdss_dsi_o3_36_02_0b_dsc_cmd.csv \
     vendor/xiaomi/dada/proprietary/odm/etc/display/qdcm_calib_data_xiaomi_o3_36_02_0b_cmd_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_ODM)/etc/display/qdcm_calib_data_xiaomi_o3_36_02_0b_cmd_mode_dsc_dsi_panel.json \
     vendor/xiaomi/dada/proprietary/odm/etc/display/qdcm_calib_data_xiaomi_o3_42_0d_0a_cmd_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_ODM)/etc/display/qdcm_calib_data_xiaomi_o3_42_0d_0a_cmd_mode_dsc_dsi_panel.json \
-    vendor/xiaomi/dada/proprietary/odm/etc/init/init.mfp-daemon.aidl.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.mfp-daemon.aidl.rc \
     vendor/xiaomi/dada/proprietary/odm/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.camera.provider-service_64.rc \
     vendor/xiaomi/dada/proprietary/odm/etc/init/vendor.xiaomi.hw.touchfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hw.touchfeature-service.rc \
     vendor/xiaomi/dada/proprietary/odm/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc \
@@ -1793,7 +1792,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.metadata-V2-ndk_prebuilt \
     android.hardware.camera.provider-V2-ndk_prebuilt \
     android.hardware.graphics.common-V5-ndk_prebuilt \
-    com.fingerprints.extension3-V1-ndk \
     libcameraobserver \
     libcameraopt \
     libimage_io_prebuilt \
@@ -1811,7 +1809,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.camera.injection-service \
     vendor.xiaomi.hardware.camera.synthetic-V1-ndk \
     vendor.xiaomi.hardware.camera.synthetic-impl \
-    vendor.xiaomi.hardware.fingerprintextension-V1-ndk \
     vendor.xiaomi.hardware.fx.tunnel-V1-ndk \
     vendor.xiaomi.hw.touchfeature-V1-ndk \
     vendor.xiaomi.sensor.citsensorservice-V1-ndk \
@@ -2097,8 +2094,7 @@ PRODUCT_PACKAGES += \
     com.qti.chi.offline \
     com.qti.chi.override \
     consumerir.qcom \
-    fingerprint.goodix_us \
-    fingerprint.qcom_us \
+    fingerprint.qcom_us.default \
     immunesystem.db.sqlite3 \
     libAF \
     libAncHumanPreviewBokeh \
@@ -2196,7 +2192,6 @@ PRODUCT_PACKAGES += \
     libellv \
     libfastmessage \
     libfuai_camera_alg \
-    libgf_hal \
     libhandgesture.arcsoft \
     libharbo \
     libhdr10plus \
@@ -2344,8 +2339,6 @@ PRODUCT_PACKAGES += \
     odm_lib_rfsa_adsp_libmlawbpostproc_dsp_skel_so \
     vendor.xiaomi.hardware.dynamiccameraserver.xml \
     vendor.xiaomi.hardware.quickcamera.xml \
-    AHBF-V3-service.xml \
-    fod-aidl.xml \
     vendor.qti.camera.provider.xml \
     vendor.xiaomi.camera.aon-impl.xml \
     vendor.xiaomi.hardware.aidlbgservice-service.xml \
@@ -2353,7 +2346,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.sensor.citsensorservice.aidl.xml \
     batterysecret \
     mi_thermald \
-    mfp-daemon \
     vendor.qti.camera.provider-service_64 \
     vendor.xiaomi.hw.touchfeature-service \
     vendor.xiaomi.sensor.citsensorservice.aidl
