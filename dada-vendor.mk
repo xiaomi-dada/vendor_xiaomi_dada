@@ -1298,6 +1298,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dada/proprietary/odm/etc/init/init.mfp-daemon.aidl.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.mfp-daemon.aidl.rc \
     vendor/xiaomi/dada/proprietary/odm/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.camera.provider-service_64.rc \
     vendor/xiaomi/dada/proprietary/odm/etc/init/vendor.xiaomi.hw.touchfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hw.touchfeature-service.rc \
+    vendor/xiaomi/dada/proprietary/odm/etc/izat_device.conf:$(TARGET_COPY_OUT_ODM)/etc/izat_device.conf \
     vendor/xiaomi/dada/proprietary/odm/etc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-hal-st.conf \
     vendor/xiaomi/dada/proprietary/odm/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nci.conf \
     vendor/xiaomi/dada/proprietary/odm/etc/mdss_dsi_o3_36_02_0b_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/mdss_dsi_o3_36_02_0b_dsc_cmd_mi.xml \
@@ -2246,9 +2247,12 @@ PRODUCT_PACKAGES += \
     odm_lib_rfsa_adsp_libmialgo_supernight_capture_cdsp_skel_so \
     odm_lib_rfsa_adsp_libmialgo_tracker_cdsp_skel_so \
     odm_lib_rfsa_adsp_libmlawbpostproc_dsp_skel_so \
+    vendor.xiaomi.hardware.dynamiccameraserver.xml \
+    vendor.xiaomi.hardware.quickcamera.xml \
     AHBF-V3-service.xml \
     fod-aidl.xml \
     vendor.qti.camera.provider.xml \
+    vendor.xiaomi.hardware.aidlbgservice-service.xml \
     vendor.xiaomi.hw.touchfeature-service.xml \
     batterysecret \
     mi_thermald \

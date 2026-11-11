@@ -15560,6 +15560,24 @@ prebuilt_rfsa {
 }
 
 prebuilt_etc_xml {
+    name: "vendor.xiaomi.hardware.dynamiccameraserver.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.dynamiccameraserver.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.xiaomi.hardware.quickcamera.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.quickcamera.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "AHBF-V3-service.xml",
     owner: "xiaomi",
     src: "proprietary/odm/etc/vintf/manifest/AHBF-V3-service.xml",
@@ -15581,6 +15599,15 @@ prebuilt_etc_xml {
     name: "vendor.qti.camera.provider.xml",
     owner: "xiaomi",
     src: "proprietary/odm/etc/vintf/manifest/vendor.qti.camera.provider.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.xiaomi.hardware.aidlbgservice-service.xml",
+    owner: "xiaomi",
+    src: "proprietary/odm/etc/vintf/manifest/vendor.xiaomi.hardware.aidlbgservice-service.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     device_specific: true,
