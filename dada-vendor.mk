@@ -1788,15 +1788,22 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dada/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
 
 PRODUCT_PACKAGES += \
+    android.hardware.camera.common-V1-ndk_prebuilt \
+    android.hardware.camera.device-V2-ndk_prebuilt \
+    android.hardware.camera.metadata-V2-ndk_prebuilt \
+    android.hardware.camera.provider-V2-ndk_prebuilt \
+    android.hardware.graphics.common-V5-ndk_prebuilt \
     com.fingerprints.extension3-V1-ndk \
     libcameraobserver \
     libcameraopt \
+    libimage_io_prebuilt \
     libjpegdecoder_prebuilt \
     libjpegencoder_prebuilt \
     libkcl_a730 \
     libopencv_core \
     libopencv_imgproc \
     libultrahdr_prebuilt \
+    vendor.qti.hardware.camera.offlinecamera-V2-ndk_prebuilt \
     vendor.qti.hardware.fingerprint-V1-ndk \
     vendor.xiaomi.hardware.aon-V1-ndk \
     vendor.xiaomi.hardware.camera.injection-V1-ndk \
@@ -2111,11 +2118,13 @@ PRODUCT_PACKAGES += \
     libQnnGpu \
     libQnnHtp \
     libQnnHtpPrepare \
+    libQnnHtpV79Stub \
     libQnnSaver \
     libQnnSystem \
     libSNPE \
     libSnpeHta \
     libSnpeHtpPrepare \
+    libSnpeHtpV79Stub \
     libTrueSight \
     libaidenoiser \
     libailab_rawhdr \
