@@ -2095,12 +2095,16 @@ PRODUCT_PACKAGES += \
     libcamxhwlfrontend \
     libcamxhwlipedriver \
     libcamxhwnodecontext \
+    libcamxifestriping \
     libcamximageformatutils \
+    libcamxncsdatafactory \
     libcamxods \
     libcamxofehwl \
+    libcamxqsatalgo \
     libcamxsettingsmanager \
     libcamxstatscore \
     libcamxswispiqmodule \
+    libcamxswprocessalgo \
     libcamxtintlessalgo \
     libcamxvppservicebase \
     libchifeature2 \
@@ -2122,6 +2126,7 @@ PRODUCT_PACKAGES += \
     libcom.xiaomi.sensorpolicy \
     libcom.xiaomi.signaltrigger \
     libcommonchiutils \
+    libcrussp \
     libdlrmsc_android15 \
     libecdpreproc \
     libecoengine \
@@ -2181,6 +2186,10 @@ PRODUCT_PACKAGES += \
     libmis_plugin_dummy \
     libmis_plugin_his \
     libmismartae \
+    libmmcamera_bestats \
+    libmmcamera_cac \
+    libmmcamera_lscv35 \
+    libmmcamera_pdpc \
     libmorpho_Depurple \
     libmpbase \
     libocr_api \
