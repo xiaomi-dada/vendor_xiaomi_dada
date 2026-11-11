@@ -2023,15 +2023,52 @@ PRODUCT_PACKAGES += \
     com.qti.camx.chiiqutils \
     com.qti.chifeaturecompatibility \
     com.qti.chiusecaseselector \
+    com.qti.feature2.afbrckt \
+    com.qti.feature2.anchorsync \
+    com.qti.feature2.demux \
+    com.qti.feature2.derivedoffline \
+    com.qti.feature2.frc \
+    com.qti.feature2.fusion \
+    com.qti.feature2.generic.sm8750 \
     com.qti.feature2.generic \
+    com.qti.feature2.gs.sm8750 \
+    com.qti.feature2.hdr \
+    com.qti.feature2.mcreprocrt.sm8750 \
+    com.qti.feature2.mcreprocrt \
+    com.qti.feature2.memcpy \
+    com.qti.feature2.metadataserializer \
     com.qti.feature2.mfsr.sm8750 \
+    com.qti.feature2.mfsr \
+    com.qti.feature2.ml \
+    com.qti.feature2.mux \
     com.qti.feature2.offlinestatsregeneration \
+    com.qti.feature2.qcfa \
     com.qti.feature2.raw2yuvhdr \
+    com.qti.feature2.rawhdr \
+    com.qti.feature2.realtimeserializer \
+    com.qti.feature2.rt \
+    com.qti.feature2.rtmcx.sm8750 \
+    com.qti.feature2.rtmcx \
+    com.qti.feature2.rtpostproc.sm8750 \
+    com.qti.feature2.rtpostproc \
+    com.qti.feature2.serializer \
+    com.qti.feature2.statsregeneration \
+    com.qti.feature2.stub \
+    com.qti.feature2.swmf \
     com.qti.qseeaon \
     com.qti.qseeutils \
+    com.qti.settings.sm8750 \
     com.qti.stats.common \
+    com.qualcomm.mcx.distortionmapper \
+    com.qualcomm.mcx.linearmapper \
+    com.qualcomm.mcx.nonlinearmapper \
+    com.qualcomm.mcx.policy.mfl \
+    com.qualcomm.mcx.policy.sfl \
+    com.qualcomm.qti.mcx.usecase.extension \
     com.xiaomi.camdfx \
     com.xiaomi.camhal.extmodel.catch_log_sys \
+    com.xiaomi.camhal.extmodel.ec_diag_sys \
+    com.xiaomi.camhal.extmodel.ec_executor \
     com.xiaomi.camhal.overlap \
     com.xiaomi.camhal.submodel.camxfrag \
     com.xiaomi.camhal.submodel.chifrag \
@@ -2039,6 +2076,10 @@ PRODUCT_PACKAGES += \
     com.xiaomi.immunesystem.bigdata2 \
     com.xiaomi.immunesystem.client \
     com.xiaomi.immunesystem.core \
+    com.xiaomi.immunesystem.hook.camx \
+    com.xiaomi.immunesystem.hook.chi \
+    com.xiaomi.immunesystem.hook.mivi \
+    com.xiaomi.immunesystem.hook.mtkhal \
     com.xiaomi.messagecenter \
     com.xiaomi.plugin.ecdengine \
     camera.qcom.sm8750 \
@@ -2070,7 +2111,10 @@ PRODUCT_PACKAGES += \
     libQnnSaver \
     libQnnSystem \
     libSNPE \
+    libSnpeHta \
+    libSnpeHtpPrepare \
     libTrueSight \
+    libaidenoiser \
     libailab_rawhdr \
     libanc_edof \
     libanc_edof_checker \
@@ -2086,6 +2130,7 @@ PRODUCT_PACKAGES += \
     libarcsoft_turbo_hdr_detection \
     libarcsoft_turbo_hdr_grf \
     libarcsoft_turbo_hdr_raw_portrait \
+    libbitmlengine \
     libbitmlenginev2 \
     libc++_shared \
     libcamera_scene \
@@ -2122,6 +2167,7 @@ PRODUCT_PACKAGES += \
     libcom.xiaomi.eventcallback \
     libcom.xiaomi.grallocutils \
     libcom.xiaomi.ionutils \
+    libcom.xiaomi.mawutils \
     libcom.xiaomi.mawutilsold \
     libcom.xiaomi.metadatautils \
     libcom.xiaomi.offlinefeatureintf \
@@ -2141,12 +2187,18 @@ PRODUCT_PACKAGES += \
     libhandgesture.arcsoft \
     libharbo \
     libhdr10plus \
+    libhdr_stub \
     libheichal \
+    libhme \
     libhwliqinterface2 \
     libhwlispcffdump \
+    libiccprofile \
     libiqdbgmgr \
     libisphwsetting \
+    libjpege \
+    libmctfengine_stub \
     libmfGhostDetection \
+    libmfec \
     libmiSAT \
     libmiSATTranslate \
     libmiStereoCalibLib_qual \
@@ -2190,39 +2242,50 @@ PRODUCT_PACKAGES += \
     libmis_plugin_dummy \
     libmis_plugin_his \
     libmismartae \
+    libmlremosaicengine \
     libmmcamera_bestats \
     libmmcamera_cac \
     libmmcamera_lscv35 \
     libmmcamera_pdpc \
+    libmmfp \
     libmorpho_Depurple \
     libmpbase \
     libocr_api \
     libofflinedebugdata \
     libois_channel_stub \
     liboischannel \
+    libopencv \
     libopencv3a \
     libportrait_repair_qnn \
     libpostprocinfo \
     libproj_qmot_tracker \
     libproj_sot \
     libqc_hal \
+    libqfdadapter \
     libqfdservice \
+    libqll \
+    libqllengine \
+    libqsegnet \
     libqshcamera \
     libremosaic_wrapper \
     libremosaiclib_s5kjn1 \
     libremosaiclib_s5kjn5 \
     librfs_warp \
+    libsfeShiftExtrapolation \
     libshadowhook \
     libsiminputgenutil \
     libsimulation \
     libsnpe_config \
     libsupermoon \
+    libswregistrationalgo \
     libtensorflowlite_touch_c \
+    libtfestriping \
     libtouchreport \
     libtouchreport_alg \
     libtouchreport_hal \
     libtouchreport_sensor \
     libvega_common \
+    libvideoml \
     libwa_widelens_undistort \
     libapn_dsp_skel \
     libbitml_nsp_73na_skel \
