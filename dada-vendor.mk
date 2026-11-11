@@ -2172,6 +2172,7 @@ PRODUCT_PACKAGES += \
     libchilog \
     libchinodeevautils \
     libchinodehmeutils \
+    libclient2slpi.notifier \
     libcom.qti.chinodeutils \
     libcom.xiaomi.attribute \
     libcom.xiaomi.debug \
