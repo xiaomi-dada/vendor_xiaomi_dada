@@ -9184,6 +9184,66 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "com.xiaomi.camhal.submodel.camxfrag",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/com.xiaomi.camhal.submodel.camxfrag.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libsync",
+                "libutils",
+                "libui",
+                "libhidlbase",
+                "libprocessgroup",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.xiaomi.camhal.submodel.chifrag",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/com.xiaomi.camhal.submodel.chifrag.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libsync",
+                "libutils",
+                "libui",
+                "libhidlbase",
+                "libprocessgroup",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "com.xiaomi.immunesystem.bigdata",
     owner: "xiaomi",
     strip: {

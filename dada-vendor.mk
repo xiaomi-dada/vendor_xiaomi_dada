@@ -1780,6 +1780,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dada/proprietary/odm/lib64/qsn3all.bin:$(TARGET_COPY_OUT_ODM)/lib64/qsn3all.bin \
     vendor/xiaomi/dada/proprietary/product/etc/displayconfig/display_id_4630946682710401939.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/displayconfig/display_id_4630946682710401939.xml \
     vendor/xiaomi/dada/proprietary/product/etc/displayconfig/display_id_4630947212918452371.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/displayconfig/display_id_4630947212918452371.xml \
+    vendor/xiaomi/dada/proprietary/vendor/etc/camera/cameraopt_perf.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cameraopt_perf.json \
+    vendor/xiaomi/dada/proprietary/vendor/etc/camera/cameraopt_vendor.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cameraopt_vendor.json \
     vendor/xiaomi/dada/proprietary/vendor/etc/init/hw/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.batterysecret.rc \
     vendor/xiaomi/dada/proprietary/vendor/etc/init/hw/init.mi_thermald.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mi_thermald.rc \
     vendor/xiaomi/dada/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
@@ -2031,6 +2033,8 @@ PRODUCT_PACKAGES += \
     com.xiaomi.camdfx \
     com.xiaomi.camhal.extmodel.catch_log_sys \
     com.xiaomi.camhal.overlap \
+    com.xiaomi.camhal.submodel.camxfrag \
+    com.xiaomi.camhal.submodel.chifrag \
     com.xiaomi.immunesystem.bigdata \
     com.xiaomi.immunesystem.bigdata2 \
     com.xiaomi.immunesystem.client \
