@@ -18638,46 +18638,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "sensors.touch.detect",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/sensors.touch.detect.so",
-            ],
-            shared_libs: [
-                "libprotobuf-cpp-lite-21.12-vendorcompat",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libhardware",
-                "libhidltransport",
-                "libhidlbase",
-                "libsensorslog",
-                "libqsh",
-                "libsnsapi",
-                "android.hardware.sensors@1.0",
-                "android.hardware.sensors@2.0",
-                "android.hardware.sensors@2.0-ScopedWakelock",
-                "android.hardware.sensors@2.1",
-                "libfmq",
-                "libpower",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.camera.aon-service-impl",
     owner: "xiaomi",
     strip: {

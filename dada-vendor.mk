@@ -2312,7 +2312,6 @@ PRODUCT_PACKAGES += \
     libbitml_nsp_skel \
     libhdr_skel \
     libqsegnetengine_dsp_skel \
-    sensors.touch.detect \
     vendor.qti.hardware.camera.aon-service-impl \
     vendor.qti.hardware.camera.offlinecamera-service-impl \
     vendor.xiaomi.hardware.aidlbgservice-V1-impl \
