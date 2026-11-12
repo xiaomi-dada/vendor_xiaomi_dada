@@ -173,6 +173,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "lib_android_keymaster_keymint_utils_prebuilt",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/lib_android_keymaster_keymint_utils_prebuilt.so",
+            ],
+            shared_libs: [
+                "android.hardware.security.keymint-V3-ndk",
+                "libbase",
+                "libhardware",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcameraobserver",
     owner: "xiaomi",
     strip: {
@@ -228,6 +255,85 @@ cc_prebuilt_library_shared {
                 "libbpf_minimal",
                 "libcrypto",
                 "libssl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcppbor_external_prebuilt",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcppbor_external_prebuilt.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcrypto",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcppbor_prebuilt",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcppbor_prebuilt.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcrypto",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcppcose_rkp_prebuilt",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcppcose_rkp_prebuilt.so",
+            ],
+            shared_libs: [
+                "libcppbor_prebuilt",
+                "libcrypto",
+                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -341,6 +447,57 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libkeymaster_messages_prebuilt",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libkeymaster_messages_prebuilt.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libkeymaster_portable_prebuilt",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libkeymaster_portable_prebuilt.so",
+            ],
+            shared_libs: [
+                "libcrypto",
+                "libcppbor_prebuilt",
+                "libcppcose_rkp_prebuilt",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libopencv_core",
     owner: "xiaomi",
     strip: {
@@ -434,6 +591,31 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libc++_shared",
                 "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsoft_attestation_cert_prebuilt",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsoft_attestation_cert_prebuilt.so",
+            ],
+            shared_libs: [
+                "libkeymaster_portable_prebuilt",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
@@ -11619,6 +11801,39 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "ese_weaver_thales",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/ese_weaver_thales.so",
+            ],
+            shared_libs: [
+                "android.se.omapi-V1-ndk",
+                "android.hardware.secure_element-V1-ndk",
+                "libcutils",
+                "libjc_weaver_transport",
+                "libhardware",
+                "libhidlbase",
+                "libutils",
+                "liblog",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "camera.qcom.sm8750",
     owner: "xiaomi",
     strip: {
@@ -15536,6 +15751,110 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libjc_keymint-thales",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libjc_keymint-thales.so",
+            ],
+            shared_libs: [
+                "android.hardware.security.keymint-V3-ndk",
+                "android.hardware.security.rkp-V3-ndk",
+                "android.hardware.security.secureclock-V1-ndk",
+                "android.hardware.security.sharedsecret-V1-ndk",
+                "lib_android_keymaster_keymint_utils_prebuilt",
+                "libbase",
+                "libcppbor_external_prebuilt",
+                "libkeymaster_portable_prebuilt",
+                "libkeymaster_messages_prebuilt",
+                "libsoft_attestation_cert_prebuilt",
+                "liblog",
+                "libcrypto",
+                "libcutils",
+                "libjc_keymint_transport-thales",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libjc_keymint_transport-thales",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libjc_keymint_transport-thales.so",
+            ],
+            shared_libs: [
+                "libbinder",
+                "libbase",
+                "liblog",
+                "libbinder_ndk",
+                "android.se.omapi-V1-ndk",
+                "libhardware",
+                "libhardware_legacy",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libjc_weaver_transport",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libjc_weaver_transport.so",
+            ],
+            shared_libs: [
+                "android.hardware.secure_element-V1-ndk",
+                "android.se.omapi-V1-ndk",
+                "libbase",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libhardware",
+                "libhidlbase",
+                "libbinder_ndk",
+                "libbinder",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libjpege",
     owner: "xiaomi",
     strip: {
@@ -18518,6 +18837,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "mi_weaver",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/mi_weaver.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "liblog",
+                "libGPTEE_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libapn_dsp_skel",
     owner: "xiaomi",
     strip: {
@@ -19104,6 +19450,33 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "android.hardware.security.keymint-service.strongbox-thales.xml",
+    owner: "xiaomi",
+    src: "proprietary/odm/etc/vintf/manifest/android.hardware.security.keymint-service.strongbox-thales.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "android.hardware.security.sharedsecret-service.strongbox-thales.xml",
+    owner: "xiaomi",
+    src: "proprietary/odm/etc/vintf/manifest/android.hardware.security.sharedsecret-service.strongbox-thales.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "android.hardware.weaver-service.thales.xml",
+    owner: "xiaomi",
+    src: "proprietary/odm/etc/vintf/manifest/android.hardware.weaver-service.thales.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "vendor.qti.camera.provider.xml",
     owner: "xiaomi",
     src: "proprietary/odm/etc/vintf/manifest/vendor.qti.camera.provider.xml",
@@ -19206,6 +19579,76 @@ cc_prebuilt_binary {
     },
     prefer: true,
     soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.security.keymint-service.strongbox-thales",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/android.hardware.security.keymint-service.strongbox-thales",
+            ],
+            shared_libs: [
+                "android.hardware.security.keymint-V3-ndk",
+                "android.hardware.security.rkp-V3-ndk",
+                "android.hardware.security.sharedsecret-V1-ndk",
+                "lib_android_keymaster_keymint_utils_prebuilt",
+                "libbase",
+                "libbinder_ndk",
+                "libcppbor_external_prebuilt",
+                "libcrypto",
+                "libkeymaster_portable_prebuilt",
+                "libjc_keymint-thales",
+                "libjc_keymint_transport-thales",
+                "liblog",
+                "libutils",
+                "android.se.omapi-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.weaver-service.thales",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/android.hardware.weaver-service.thales",
+            ],
+            shared_libs: [
+                "android.hardware.weaver-V2-ndk",
+                "ese_weaver_thales",
+                "libbase",
+                "liblog",
+                "libbinder_ndk",
+                "mi_weaver",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    device_specific: true,
 }
 
 cc_prebuilt_binary {

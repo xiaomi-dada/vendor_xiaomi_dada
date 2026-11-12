@@ -1295,6 +1295,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dada/proprietary/odm/etc/display/R_Com_Gary_Gain_mdss_dsi_o3_36_02_0b_dsc_cmd.csv:$(TARGET_COPY_OUT_ODM)/etc/display/R_Com_Gary_Gain_mdss_dsi_o3_36_02_0b_dsc_cmd.csv \
     vendor/xiaomi/dada/proprietary/odm/etc/display/qdcm_calib_data_xiaomi_o3_36_02_0b_cmd_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_ODM)/etc/display/qdcm_calib_data_xiaomi_o3_36_02_0b_cmd_mode_dsc_dsi_panel.json \
     vendor/xiaomi/dada/proprietary/odm/etc/display/qdcm_calib_data_xiaomi_o3_42_0d_0a_cmd_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_ODM)/etc/display/qdcm_calib_data_xiaomi_o3_42_0d_0a_cmd_mode_dsc_dsi_panel.json \
+    vendor/xiaomi/dada/proprietary/odm/etc/init/android.hardware.security.keymint-service.strongbox-thales.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.security.keymint-service.strongbox-thales.rc \
+    vendor/xiaomi/dada/proprietary/odm/etc/init/android.hardware.weaver-service.thales.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.weaver-service.thales.rc \
     vendor/xiaomi/dada/proprietary/odm/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.camera.provider-service_64.rc \
     vendor/xiaomi/dada/proprietary/odm/etc/init/vendor.xiaomi.hw.touchfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hw.touchfeature-service.rc \
     vendor/xiaomi/dada/proprietary/odm/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc \
@@ -1303,6 +1305,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dada/proprietary/odm/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nci.conf \
     vendor/xiaomi/dada/proprietary/odm/etc/mdss_dsi_o3_36_02_0b_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/mdss_dsi_o3_36_02_0b_dsc_cmd_mi.xml \
     vendor/xiaomi/dada/proprietary/odm/etc/mdss_dsi_o3_42_0d_0a_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/mdss_dsi_o3_42_0d_0a_dsc_cmd_mi.xml \
+    vendor/xiaomi/dada/proprietary/odm/etc/permissions/android.hardware.strongbox_keystore-thales.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.strongbox_keystore-thales.xml \
     vendor/xiaomi/dada/proprietary/odm/etc/sensors/config/5cm_blue.png:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/5cm_blue.png \
     vendor/xiaomi/dada/proprietary/odm/etc/sensors/config/5cm_gray.png:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/5cm_gray.png \
     vendor/xiaomi/dada/proprietary/odm/etc/sensors/config/5cm_green.png:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/5cm_green.png \
@@ -1782,6 +1785,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dada/proprietary/product/etc/displayconfig/display_id_4630947212918452371.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/displayconfig/display_id_4630947212918452371.xml \
     vendor/xiaomi/dada/proprietary/vendor/etc/camera/cameraopt_perf.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cameraopt_perf.json \
     vendor/xiaomi/dada/proprietary/vendor/etc/camera/cameraopt_vendor.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cameraopt_vendor.json \
+    vendor/xiaomi/dada/proprietary/vendor/etc/hal_uuid_map_dada.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hal_uuid_map_dada.xml \
     vendor/xiaomi/dada/proprietary/vendor/etc/init/hw/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.batterysecret.rc \
     vendor/xiaomi/dada/proprietary/vendor/etc/init/hw/init.mi_thermald.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mi_thermald.rc \
     vendor/xiaomi/dada/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
@@ -1793,16 +1797,23 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider-V2-ndk_prebuilt \
     android.hardware.graphics.common-V5-ndk_prebuilt \
     libSEGModel \
+    lib_android_keymaster_keymint_utils_prebuilt \
     libcameraobserver \
     libcameraopt \
+    libcppbor_external_prebuilt \
+    libcppbor_prebuilt \
+    libcppcose_rkp_prebuilt \
     libimage_io_prebuilt \
     libjpegdecoder_prebuilt \
     libjpegencoder_prebuilt \
     libkcl_a730 \
+    libkeymaster_messages_prebuilt \
+    libkeymaster_portable_prebuilt \
     libopencv_core \
     libopencv_core_se \
     libopencv_imgproc \
     libopencv_imgproc_se \
+    libsoft_attestation_cert_prebuilt \
     libultrahdr_prebuilt \
     vendor.qti.hardware.camera.offlinecamera-V2-ndk_prebuilt \
     vendor.qti.hardware.fingerprint-V1-ndk \
@@ -2092,6 +2103,7 @@ PRODUCT_PACKAGES += \
     com.xiaomi.immunesystem.hook.mtkhal \
     com.xiaomi.messagecenter \
     com.xiaomi.plugin.ecdengine \
+    ese_weaver_thales \
     camera.qcom.sm8750 \
     camera.qcom \
     com.qti.chi.offline \
@@ -2211,6 +2223,9 @@ PRODUCT_PACKAGES += \
     libipebpsstriping480 \
     libiqdbgmgr \
     libisphwsetting \
+    libjc_keymint-thales \
+    libjc_keymint_transport-thales \
+    libjc_weaver_transport \
     libjpege \
     libmctfengine_stub \
     libmfGhostDetection \
@@ -2306,6 +2321,7 @@ PRODUCT_PACKAGES += \
     libvideoml \
     libwa_widelens_undistort \
     libxmi_slow_motion_mein \
+    mi_weaver \
     libapn_dsp_skel \
     libbitml_nsp_73na_skel \
     libbitml_nsp_79na_skel \
@@ -2344,6 +2360,9 @@ PRODUCT_PACKAGES += \
     MiuiCamera \
     vendor.xiaomi.hardware.dynamiccameraserver.xml \
     vendor.xiaomi.hardware.quickcamera.xml \
+    android.hardware.security.keymint-service.strongbox-thales.xml \
+    android.hardware.security.sharedsecret-service.strongbox-thales.xml \
+    android.hardware.weaver-service.thales.xml \
     vendor.qti.camera.provider.xml \
     vendor.xiaomi.camera.aon-impl.xml \
     vendor.xiaomi.hardware.aidlbgservice-service.xml \
@@ -2351,6 +2370,8 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.sensor.citsensorservice.aidl.xml \
     batterysecret \
     mi_thermald \
+    android.hardware.security.keymint-service.strongbox-thales \
+    android.hardware.weaver-service.thales \
     vendor.qti.camera.provider-service_64 \
     vendor.xiaomi.hw.touchfeature-service \
     vendor.xiaomi.sensor.citsensorservice.aidl
