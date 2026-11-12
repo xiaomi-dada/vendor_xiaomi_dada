@@ -1,5 +1,6 @@
 * -text
 /proprietary/odm/etc/camera/unet.serialized.bin filter=lfs diff=lfs merge=lfs -text
 /proprietary/odm/lib64/libarcsoft_raw_sr.so filter=lfs diff=lfs merge=lfs -text
+/proprietary/product/priv-app/MiuiCamera/MiuiCamera.apk filter=lfs diff=lfs merge=lfs -text
 /radio/modemfirmware.img filter=lfs diff=lfs merge=lfs -text
 /radio/modem.img filter=lfs diff=lfs merge=lfs -text

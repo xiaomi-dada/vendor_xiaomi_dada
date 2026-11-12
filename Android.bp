@@ -147,6 +147,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libSEGModel",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libSEGModel.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libopencv_core_se",
+                "libopencv_imgproc_se",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcameraobserver",
     owner: "xiaomi",
     strip: {
@@ -341,6 +367,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libopencv_core_se",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libopencv_core_se.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "libm",
+                "liblog",
+                "libz",
+                "libc++_shared",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libopencv_imgproc",
     owner: "xiaomi",
     strip: {
@@ -356,6 +408,31 @@ cc_prebuilt_library_shared {
                 "libdl",
                 "libm",
                 "libc++",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libopencv_imgproc_se",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libopencv_imgproc_se.so",
+            ],
+            shared_libs: [
+                "libopencv_core_se",
+                "libdl",
+                "libm",
+                "libc++_shared",
                 "libc",
             ],
         },
@@ -16854,6 +16931,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmiocr",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libmiocr.so",
+            ],
+            shared_libs: [
+                "libSNPE",
+                "libc++_shared",
+                "liblog",
+                "libGLESv2",
+                "libEGL",
+                "libz",
+                "libdl",
+                "libm",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmiphone_capture_bokeh",
     owner: "xiaomi",
     strip: {
@@ -18438,6 +18544,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libxmi_slow_motion_mein",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libxmi_slow_motion_mein.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcdsprpc",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libapn_dsp_skel",
     owner: "xiaomi",
     strip: {
@@ -19028,6 +19159,21 @@ prebuilt_rfsa {
     src: "proprietary/odm/lib/rfsa/adsp/libmlawbpostproc_dsp_skel.so",
     relative_install_path: "adsp",
     device_specific: true,
+}
+
+android_app_import {
+    name: "MiuiCamera",
+    owner: "xiaomi",
+    apk: "proprietary/product/priv-app/MiuiCamera/MiuiCamera.apk",
+    overrides: [
+        "Aperture",
+    ],
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
 }
 
 prebuilt_etc_xml {

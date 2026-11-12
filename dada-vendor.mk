@@ -1792,6 +1792,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.metadata-V2-ndk_prebuilt \
     android.hardware.camera.provider-V2-ndk_prebuilt \
     android.hardware.graphics.common-V5-ndk_prebuilt \
+    libSEGModel \
     libcameraobserver \
     libcameraopt \
     libimage_io_prebuilt \
@@ -1799,7 +1800,9 @@ PRODUCT_PACKAGES += \
     libjpegencoder_prebuilt \
     libkcl_a730 \
     libopencv_core \
+    libopencv_core_se \
     libopencv_imgproc \
+    libopencv_imgproc_se \
     libultrahdr_prebuilt \
     vendor.qti.hardware.camera.offlinecamera-V2-ndk_prebuilt \
     vendor.qti.hardware.fingerprint-V1-ndk \
@@ -2250,6 +2253,7 @@ PRODUCT_PACKAGES += \
     libmicamera_hal_core \
     libmicamera_hal_policy \
     libminikin.xiaomi \
+    libmiocr \
     libmiphone_capture_bokeh \
     libmiphone_dualcam_depth_aideploy \
     libmis_platform \
@@ -2303,6 +2307,7 @@ PRODUCT_PACKAGES += \
     libvega_common \
     libvideoml \
     libwa_widelens_undistort \
+    libxmi_slow_motion_mein \
     libapn_dsp_skel \
     libbitml_nsp_73na_skel \
     libbitml_nsp_79na_skel \
@@ -2339,6 +2344,7 @@ PRODUCT_PACKAGES += \
     odm_lib_rfsa_adsp_libmialgo_supernight_capture_cdsp_skel_so \
     odm_lib_rfsa_adsp_libmialgo_tracker_cdsp_skel_so \
     odm_lib_rfsa_adsp_libmlawbpostproc_dsp_skel_so \
+    MiuiCamera \
     vendor.xiaomi.hardware.dynamiccameraserver.xml \
     vendor.xiaomi.hardware.quickcamera.xml \
     vendor.qti.camera.provider.xml \
