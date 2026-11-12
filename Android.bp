@@ -11880,33 +11880,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "consumerir.qcom",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/hw/consumerir.qcom.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "fingerprint.goodix_us.default",
     owner: "xiaomi",
     strip: {
@@ -18299,30 +18272,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libtensorflowlite_touch_c",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libtensorflowlite_touch_c.so",
-            ],
-            shared_libs: [
-                "libm",
-                "liblog",
-                "libdl",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libtfestriping",
     owner: "xiaomi",
     strip: {
@@ -18447,7 +18396,7 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libtouchreport_sensor.so",
             ],
             shared_libs: [
-                "libtensorflowlite_touch_c",
+                "libtensorflowlite_c",
                 "libdl",
                 "liblog",
                 "libc",

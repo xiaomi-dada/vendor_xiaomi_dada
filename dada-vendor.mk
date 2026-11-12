@@ -2096,7 +2096,6 @@ PRODUCT_PACKAGES += \
     camera.qcom \
     com.qti.chi.offline \
     com.qti.chi.override \
-    consumerir.qcom \
     fingerprint.goodix_us.default \
     fingerprint.qcom_us.default \
     immunesystem.db.sqlite3 \
@@ -2298,7 +2297,6 @@ PRODUCT_PACKAGES += \
     libsnpe_config \
     libsupermoon \
     libswregistrationalgo \
-    libtensorflowlite_touch_c \
     libtfestriping \
     libtouchreport \
     libtouchreport_alg \
