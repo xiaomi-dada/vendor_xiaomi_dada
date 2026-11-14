@@ -600,6 +600,36 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libsi",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsi.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libpng",
+                "libQSEEComAPI",
+                "libtrustedapploader",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libsoft_attestation_cert_prebuilt",
     owner: "xiaomi",
     strip: {
@@ -689,6 +719,31 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/vendor.qti.hardware.fingerprint-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.xiaomi.hardware.aek-V1-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.xiaomi.hardware.aek-V1-ndk.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -17196,6 +17251,52 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmiface",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libmiface.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libbinder_ndk",
+                "libcamera2ndk_vendor",
+                "libcutils",
+                "libdmabufheap",
+                "libdumpstateutil",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "liblog",
+                "libmediandk",
+                "libnativewindow",
+                "libstagefright_foundation",
+                "libui",
+                "libutils",
+                "libutilscallstack",
+                "android.hardware.biometrics.common-V4-ndk",
+                "android.hardware.biometrics.face-V4-ndk",
+                "vendor.xiaomi.hardware.aek-V1-ndk",
+                "libmisight",
+                "libminksocket_vendor",
+                "libteecli",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libminikin.xiaomi",
     owner: "xiaomi",
     strip: {
@@ -18591,6 +18692,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libteecli",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libteecli.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libtfestriping",
     owner: "xiaomi",
     strip: {
@@ -19094,6 +19220,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.qvirt-V1-ndk_odm",
+    stem: "vendor.qti.qvirt-V1-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.qti.qvirt-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.xiaomi.hardware.aidlbgservice-V1-impl",
     owner: "xiaomi",
     strip: {
@@ -19450,6 +19602,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "android.hardware.biometrics.face-v4.xml",
+    owner: "xiaomi",
+    src: "proprietary/odm/etc/vintf/manifest/android.hardware.biometrics.face-v4.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "android.hardware.security.keymint-service.strongbox-thales.xml",
     owner: "xiaomi",
     src: "proprietary/odm/etc/vintf/manifest/android.hardware.security.keymint-service.strongbox-thales.xml",
@@ -19489,6 +19650,15 @@ prebuilt_etc_xml {
     name: "vendor.xiaomi.camera.aon-impl.xml",
     owner: "xiaomi",
     src: "proprietary/odm/etc/vintf/manifest/vendor.xiaomi.camera.aon-impl.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.xiaomi.hardware.aek.xml",
+    owner: "xiaomi",
+    src: "proprietary/odm/etc/vintf/manifest/vendor.xiaomi.hardware.aek.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     device_specific: true,
@@ -19652,6 +19822,33 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "mifaced",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/mifaced",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libmiface",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "vendor.qti.camera.provider-service_64",
     owner: "xiaomi",
     target: {
@@ -19785,6 +19982,42 @@ cc_prebuilt_binary {
     },
     prefer: true,
     relative_install_path: "hw",
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "tee-supplicant",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/tee-supplicant",
+            ],
+            shared_libs: [
+                "libteecli",
+                "liblog",
+                "libbase",
+                "libutils",
+                "libcutils",
+                "libbinder_ndk",
+                "libhidlbase",
+                "libhardware",
+                "libqdutils",
+                "libsi",
+                "vendor.qti.qvirt-V1-ndk",
+                "libQSEEComAPI",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
     device_specific: true,
 }
 
